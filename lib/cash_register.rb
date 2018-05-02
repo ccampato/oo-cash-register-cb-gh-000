@@ -1,6 +1,6 @@
 require "pry"
 class CashRegister
-  attr_accessor :total, :discount, :title, :price, :items
+  attr_accessor :total, :discount, :title, :price,
 
   def initialize(*discount)
     @total = 0
@@ -25,7 +25,7 @@ class CashRegister
   end
 
   def self.items
-    Array.new(@title)
+    Array.new(4, @title)
   end
 
 end
