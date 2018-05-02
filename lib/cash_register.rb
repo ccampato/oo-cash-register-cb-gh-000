@@ -25,7 +25,7 @@ class CashRegister
   end
 
   def self.items
-    Array.new(4, @title)
+    [@title]
   end
 
 end
